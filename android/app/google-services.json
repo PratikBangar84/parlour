@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "958813889781",
+    "project_id": "parlour-a2347",
+    "storage_bucket": "parlour-a2347.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:958813889781:android:1eb2276383c3b5da1951bc",
+        "android_client_info": {
+          "package_name": "com.android.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "958813889781-qm151rdqma87oobt3rj38r409ho8fjus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4nMjcOBx9-rBVoNfdWo9wRSUAgUOskBI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "958813889781-qm151rdqma87oobt3rj38r409ho8fjus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
