@@ -2,6 +2,7 @@ import 'dart:html';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_webpage/landingscreen/categories.dart';
+import 'package:flutter_webpage/signup.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class landingscreen extends StatefulWidget {
@@ -151,8 +152,8 @@ class _landingscreenState extends State<landingscreen> {
               children: <Widget>[
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (_) => categories()));
+                    Navigator.push(
+                        context, MaterialPageRoute(builder: (_) => Signup()));
                   },
                   child: Container(
                     height: 100.0,

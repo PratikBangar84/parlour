@@ -49,7 +49,7 @@ class _bookedState extends State<booked> {
                   borderRadius: BorderRadius.circular(15),
                 ),
                 child: DropdownButton(
-                  alignment: Alignment.topCenter,
+                  alignment: Alignment.topRight,
                   borderRadius: BorderRadius.circular(10),
                   dropdownColor: Color.fromARGB(255, 98, 12, 28),
                   value: currentItem,

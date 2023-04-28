@@ -4,7 +4,23 @@ import 'package:flutter_webpage/landingscreen/landingscreen.dart';
 import 'package:flutter_webpage/landingscreen/navbar.dart';
 import 'package:firebase_core/firebase_core.dart';
 
-void main() => runApp(MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  if (Firebase.apps.isEmpty) {
+    await Firebase.initializeApp(
+      options: FirebaseOptions(
+          apiKey: "AIzaSyAw9Z0YN8f1ljbEdovDfHg_36TWX1s6YL0",
+          authDomain: "parlour-a2347.firebaseapp.com",
+          projectId: "parlour-a2347",
+          storageBucket: "parlour-a2347.appspot.com",
+          messagingSenderId: "958813889781",
+          appId: "1:958813889781:web:5fe176bb7de94f6f1951bc"),
+    );
+  } else {
+    Firebase.app();
+  }
+  runApp(MyApp());
+}
 
 class MyApp extends StatefulWidget {
   @override
@@ -12,11 +28,6 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  Future<FirebaseApp> _initializeFirebase() async {
-    FirebaseApp firebaseApp = await Firebase.initializeApp();
-    return firebaseApp;
-  }
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
